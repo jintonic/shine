@@ -1,6 +1,6 @@
 services:
   node:
-    image: "node"
+    image: physino/shine
     user: "node"
     working_dir: /home/node/app
     environment:
@@ -8,5 +8,16 @@ services:
     volumes:
       - ./:/home/node/app
     expose:
-      - "8888"
-    command: "npm start"
+      - "5173"
+    command: "npx vite"
+    build: .
+
+  sh:
+    image: physino/shine
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./:/home/node/app
+    command: "/bin/bash"
+
