@@ -1,23 +1,12 @@
 services:
   node:
-    image: physino/shine
-    user: "node"
+    image: node
+    user: node
     working_dir: /home/node/app
     environment:
       - NODE_ENV=production
     volumes:
       - ./:/home/node/app
     expose:
-      - "5173"
+      - 5173
     command: "npx vite"
-    build: .
-
-  sh:
-    image: physino/shine
-    working_dir: /home/node/app
-    environment:
-      - NODE_ENV=production
-    volumes:
-      - ./:/home/node/app
-    command: "/bin/bash"
-
