@@ -72,22 +72,6 @@ function MenubarAdd( editor ) {
 	} );
 	options.add( option );
 
-	// Circle
-
-	option = new UIRow();
-	option.setClass( 'option' );
-	option.setTextContent( strings.getKey( 'menubar/add/circle' ) );
-	option.onClick( function () {
-
-		const geometry = new THREE.CircleGeometry( 1, 32, 0, Math.PI * 2 );
-		const mesh = new THREE.Mesh( geometry, new THREE.MeshStandardMaterial() );
-		mesh.name = 'Circle';
-
-		editor.execute( new AddObjectCommand( editor, mesh ) );
-
-	} );
-	options.add( option );
-
 	// Cylinder
 
 	option = new UIRow();
@@ -168,39 +152,6 @@ function MenubarAdd( editor ) {
 	} );
 	options.add( option );
 
-	// Plane
-
-	option = new UIRow();
-	option.setClass( 'option' );
-	option.setTextContent( strings.getKey( 'menubar/add/plane' ) );
-	option.onClick( function () {
-
-		const geometry = new THREE.PlaneGeometry( 1, 1, 1, 1 );
-		const material = new THREE.MeshStandardMaterial();
-		const mesh = new THREE.Mesh( geometry, material );
-		mesh.name = 'Plane';
-
-		editor.execute( new AddObjectCommand( editor, mesh ) );
-
-	} );
-	options.add( option );
-
-	// Ring
-
-	option = new UIRow();
-	option.setClass( 'option' );
-	option.setTextContent( strings.getKey( 'menubar/add/ring' ) );
-	option.onClick( function () {
-
-		const geometry = new THREE.RingGeometry( 0.5, 1, 32, 1, 0, Math.PI * 2 );
-		const mesh = new THREE.Mesh( geometry, new THREE.MeshStandardMaterial() );
-		mesh.name = 'Ring';
-
-		editor.execute( new AddObjectCommand( editor, mesh ) );
-
-	} );
-	options.add( option );
-
 	// Sphere
 
 	option = new UIRow();
@@ -213,21 +164,6 @@ function MenubarAdd( editor ) {
 		mesh.name = 'Sphere';
 
 		editor.execute( new AddObjectCommand( editor, mesh ) );
-
-	} );
-	options.add( option );
-
-	// Sprite
-
-	option = new UIRow();
-	option.setClass( 'option' );
-	option.setTextContent( strings.getKey( 'menubar/add/sprite' ) );
-	option.onClick( function () {
-
-		const sprite = new THREE.Sprite( new THREE.SpriteMaterial() );
-		sprite.name = 'Sprite';
-
-		editor.execute( new AddObjectCommand( editor, sprite ) );
 
 	} );
 	options.add( option );
@@ -258,22 +194,6 @@ function MenubarAdd( editor ) {
 		const geometry = new THREE.TorusGeometry( 1, 0.4, 12, 48, Math.PI * 2 );
 		const mesh = new THREE.Mesh( geometry, new THREE.MeshStandardMaterial() );
 		mesh.name = 'Torus';
-
-		editor.execute( new AddObjectCommand( editor, mesh ) );
-
-	} );
-	options.add( option );
-
-	// TorusKnot
-
-	option = new UIRow();
-	option.setClass( 'option' );
-	option.setTextContent( strings.getKey( 'menubar/add/torusknot' ) );
-	option.onClick( function () {
-
-		const geometry = new THREE.TorusKnotGeometry( 1, 0.4, 64, 8, 2, 3 );
-		const mesh = new THREE.Mesh( geometry, new THREE.MeshStandardMaterial() );
-		mesh.name = 'TorusKnot';
 
 		editor.execute( new AddObjectCommand( editor, mesh ) );
 
