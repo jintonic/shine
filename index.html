@@ -63,6 +63,7 @@
       import { Toolbar } from './js/Toolbar.js';
       import { Script } from './js/Script.js';
       import { Player } from './js/Player.js';
+      import { ModelCategory } from './js/ModelCategories.js';
       import { Sidebar } from './js/Sidebar.js';
       import { Menubar } from './js/Menubar.js';
       import { Resizer } from './js/Resizer.js';
@@ -92,6 +93,9 @@
 
       const player = new Player( editor );
       document.body.appendChild( player.dom );
+
+      const modelcategory = new ModelCategory( editor );
+      document.body.appendChild( modelcategory.dom );
 
       const sidebar = new Sidebar( editor );
       document.body.appendChild( sidebar.dom );
