@@ -130,6 +130,8 @@ function ModelCategory(editor) {
  item.dom.setAttribute('item-type', 'Cone');
  item.onClick(function () {
 
+  // we need to new each geometry module
+  
   const geometry = new THREE.BoxGeometry(1, 1, 1, 1, 1, 1);
   const mesh = new THREE.Mesh(geometry, new THREE.MeshStandardMaterial());
   mesh.name = 'Box';
