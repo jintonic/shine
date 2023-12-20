@@ -53,4 +53,4 @@ This project should have been created in the following way:
 
 ## Files
 
-- manifest.json: <https://w3c.github.io/manifest>
+- [manifest.json](manifest.json): <https://w3c.github.io/manifest> and <https://deskpro.gitbook.io/deskpro-apps/reference/manifest-package.json>
