@@ -25,7 +25,7 @@ function ModelCategory(editor) {
     let item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(../images/basicmodels/aBox.jpg)";
+    item.dom.style.backgroundImage = "url(/images/basicmodels/aBox.jpg)";
 
     item.setTextContent(strings.getKey('menubar/add/box'));
     item.dom.setAttribute('draggable', true);
@@ -74,7 +74,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(../images/basicmodels/aOrb.jpg)";
+    item.dom.style.backgroundImage = "url(/images/basicmodels/aOrb.jpg)";
 
     item.setTextContent(strings.getKey('menubar/add/sphere'));
     item.dom.setAttribute('draggable', true);
@@ -126,7 +126,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(../images/basicmodels/aTubs.jpg)";
+    item.dom.style.backgroundImage = "url(/images/basicmodels/aTubs.jpg)";
 
     item.setTextContent(strings.getKey('menubar/add/g4tube'));
     item.dom.setAttribute('draggable', true);
@@ -324,7 +324,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(../images/basicmodels/aCutTube.jpg)";
+    item.dom.style.backgroundImage = "url(/images/basicmodels/aCutTube.jpg)";
 
     item.setTextContent(strings.getKey('menubar/add/g4cuttube'));
     item.dom.setAttribute('draggable', true);
@@ -655,7 +655,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(../images/basicmodels/aCons.jpg)";
+    item.dom.style.backgroundImage = "url(/images/basicmodels/aCons.jpg)";
 
     item.setTextContent(strings.getKey('menubar/add/g4cone'));
     item.dom.setAttribute('draggable', true);
@@ -862,7 +862,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(../images/basicmodels/aPara.jpg)";
+    item.dom.style.backgroundImage = "url(/images/basicmodels/aPara.jpg)";
 
     item.setTextContent(strings.getKey('menubar/add/apara'));
     item.dom.setAttribute('draggable', true);
@@ -1027,7 +1027,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(../images/basicmodels/aTrd.jpg)";
+    item.dom.style.backgroundImage = "url(/images/basicmodels/aTrd.jpg)";
 
     item.setTextContent(strings.getKey('menubar/add/atrapezoid'));
     item.dom.setAttribute('draggable', true);
@@ -1177,7 +1177,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(../images/basicmodels/aTrap.jpg)";
+    item.dom.style.backgroundImage = "url(/images/basicmodels/aTrap.jpg)";
 
     item.setTextContent(strings.getKey('menubar/add/atrapezoid2'));
     item.dom.setAttribute('draggable', true);
@@ -1320,7 +1320,7 @@ function ModelCategory(editor) {
 
     item = new UIDiv();
     item.setClass('Category-item');
-    item.dom.style.backgroundImage = "url(../images/basicmodels/aTorus.jpg)";
+    item.dom.style.backgroundImage = "url(/images/basicmodels/aTorus.jpg)";
 
     item.setTextContent(strings.getKey('menubar/add/atorus'));
     item.dom.setAttribute('draggable', true);
@@ -1526,7 +1526,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(../images/basicmodels/aEllipticalTube.jpg)";
+    item.dom.style.backgroundImage = "url(/images/basicmodels/aEllipticalTube.jpg)";
 
     item.setTextContent(strings.getKey('menubar/add/aellipticalcylinder'));
     item.dom.setAttribute('draggable', true);
@@ -1600,7 +1600,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(../images/basicmodels/aEllipsoid.jpg)";
+    item.dom.style.backgroundImage = "url(/images/basicmodels/aEllipsoid.jpg)";
 
     item.setTextContent(strings.getKey('menubar/add/aellipsoid'));
     item.dom.setAttribute('draggable', true);
@@ -1787,7 +1787,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(../images/basicmodels/aEllipticalCone.jpg)";
+    item.dom.style.backgroundImage = "url(/images/basicmodels/aEllipticalCone.jpg)";
 
     item.setTextContent(strings.getKey('menubar/add/aellipticalcone'));
     item.dom.setAttribute('draggable', true);
@@ -1868,7 +1868,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(../images/basicmodels/aTwistedBox.jpg)";
+    item.dom.style.backgroundImage = "url(/images/basicmodels/aTwistedBox.jpg)";
 
     item.setTextContent(strings.getKey('menubar/add/twistedbox'));
     item.dom.setAttribute('draggable', true);
@@ -1945,7 +1945,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(../images/basicmodels/aTwistedTrd.jpg)";
+    item.dom.style.backgroundImage = "url(/images/basicmodels/aTwistedTrd.jpg)";
 
     item.setTextContent(strings.getKey('menubar/add/atwistedtrd'));
     item.dom.setAttribute('draggable', true);
@@ -2117,7 +2117,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(../images/basicmodels/aTwistedTrap.jpg)";
+    item.dom.style.backgroundImage = "url(/images/basicmodels/aTwistedTrap.jpg)";
 
     item.setTextContent(strings.getKey('menubar/add/atwistedtrap'));
     item.dom.setAttribute('draggable', true);
@@ -2283,7 +2283,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(../images/basicmodels/aTwistedTubs.jpg)";
+    item.dom.style.backgroundImage = "url(/images/basicmodels/aTwistedTubs.jpg)";
 
     item.setTextContent(strings.getKey('menubar/add/atwistedtube'));
     item.dom.setAttribute('draggable', true);
@@ -2502,7 +2502,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(../images/basicmodels/aTet.jpg)";
+    item.dom.style.backgroundImage = "url(/images/basicmodels/aTet.jpg)";
 
     item.setTextContent(strings.getKey('menubar/add/tetrahedra'));
     item.dom.setAttribute('draggable', true);
@@ -2569,7 +2569,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(../images/basicmodels/aGenericTrap.jpg)";
+    item.dom.style.backgroundImage = "url(/images/basicmodels/aGenericTrap.jpg)";
 
     item.setTextContent(strings.getKey('menubar/add/generictrap'));
     item.dom.setAttribute('draggable', true);
@@ -2651,7 +2651,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(../images/basicmodels/aParaboloid.jpg)";
+    item.dom.style.backgroundImage = "url(/images/basicmodels/aParaboloid.jpg)";
 
     item.setTextContent(strings.getKey('menubar/add/aparaboloid'));
     item.dom.setAttribute('draggable', true);
@@ -2795,7 +2795,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(../images/basicmodels/aHyperboloid.jpg)";
+    item.dom.style.backgroundImage = "url(/images/basicmodels/aHyperboloid.jpg)";
 
     item.setTextContent(strings.getKey('menubar/add/ahyperboloid'));
     item.dom.setAttribute('draggable', true);
@@ -2982,7 +2982,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(../images/basicmodels/aBREPSolidPCone.jpg)";
+    item.dom.style.backgroundImage = "url(/images/basicmodels/aBREPSolidPCone.jpg)";
 
     item.setTextContent(strings.getKey('menubar/add/polycone'));
     item.dom.setAttribute('draggable', true);
@@ -3069,7 +3069,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(../images/basicmodels/aBREPSolidPolyhedra.jpg)";
+    item.dom.style.backgroundImage = "url(/images/basicmodels/aBREPSolidPolyhedra.jpg)";
 
     item.setTextContent(strings.getKey('menubar/add/polyhedra'));
     item.dom.setAttribute('draggable', true);
