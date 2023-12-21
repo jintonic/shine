@@ -6,6 +6,29 @@ import { PolyconeGeometry } from './libs/geometry/PolyconeGeometry.js';
 import { UIDiv, UIPanel, UIRow } from "./libs/ui.js";
 
 import { AddObjectCommand } from './commands/AddObjectCommand.js';
+import radiationsourceImg from '../images/basicmodels/radiationSource.jpg'
+import boxImg from '../images/basicmodels/aBox.jpg';
+import shpereImg from '../images/basicmodels/aOrb.jpg';
+import tubImg from '../images/basicmodels/aTubs.jpg';
+import cuttubImg from '../images/basicmodels/aCutTube.jpg';
+import coneImg from '../images/basicmodels/aCons.jpg';
+import paraImg from '../images/basicmodels/aPara.jpg';
+import trdImg from '../images/basicmodels/aTrd.jpg';
+import trapImg from '../images/basicmodels/aTrap.jpg';
+import torusImg from '../images/basicmodels/aTorus.jpg';
+import ellipticaltubeImg from '../images/basicmodels/aEllipticalTube.jpg';
+import ellipsoidImg from '../images/basicmodels/aEllipsoid.jpg';
+import ellipticalconeImg from '../images/basicmodels/aEllipticalCone.jpg';
+import twistedboxImg from '../images/basicmodels/aTwistedBox.jpg';
+import twistedtrdImg from '../images/basicmodels/aTwistedTrd.jpg';
+import twistedtrapImg from '../images/basicmodels/aTwistedTrap.jpg';
+import twistedtubImg from '../images/basicmodels/aTwistedTubs.jpg';
+import tetImg from '../images/basicmodels/aTet.jpg';
+import generictrapImg from '../images/basicmodels/aGenericTrap.jpg';
+import paraboloidImg from '../images/basicmodels/aParaboloid.jpg';
+import hyperboloidImg from '../images/basicmodels/aHyperboloid.jpg';
+import solidconeImg from '../images/basicmodels/aBREPSolidPCone.jpg';
+import solidpolyhedraImg from '../images/basicmodels/aBREPSolidPolyhedra.jpg';
 
 function ModelCategory(editor) {
     const strings = editor.strings;
@@ -26,7 +49,7 @@ function ModelCategory(editor) {
 
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(/images/basicmodels/radiationSource.jpg)";
+    item.dom.style.backgroundImage = `url(${radiationsourceImg})`;
 
     item.setTextContent(strings.getKey('menubar/add/pointsource'));
     item.dom.setAttribute('draggable', true);
@@ -82,7 +105,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(/images/basicmodels/aBox.jpg)";
+    item.dom.style.backgroundImage = `url(${boxImg})`;
 
     item.setTextContent(strings.getKey('menubar/add/box'));
     item.dom.setAttribute('draggable', true);
@@ -131,7 +154,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(/images/basicmodels/aOrb.jpg)";
+    item.dom.style.backgroundImage = `url(${shpereImg})`;
 
     item.setTextContent(strings.getKey('menubar/add/sphere'));
     item.dom.setAttribute('draggable', true);
@@ -183,7 +206,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(/images/basicmodels/aTubs.jpg)";
+    item.dom.style.backgroundImage = `url(${tubImg})`;
 
     item.setTextContent(strings.getKey('menubar/add/g4tube'));
     item.dom.setAttribute('draggable', true);
@@ -381,7 +404,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(/images/basicmodels/aCutTube.jpg)";
+    item.dom.style.backgroundImage = `url(${cuttubImg})`;
 
     item.setTextContent(strings.getKey('menubar/add/g4cuttube'));
     item.dom.setAttribute('draggable', true);
@@ -712,7 +735,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(/images/basicmodels/aCons.jpg)";
+    item.dom.style.backgroundImage = `url(${coneImg})`;
 
     item.setTextContent(strings.getKey('menubar/add/g4cone'));
     item.dom.setAttribute('draggable', true);
@@ -919,7 +942,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(/images/basicmodels/aPara.jpg)";
+    item.dom.style.backgroundImage = `url(${paraImg})`;
 
     item.setTextContent(strings.getKey('menubar/add/apara'));
     item.dom.setAttribute('draggable', true);
@@ -1084,7 +1107,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(/images/basicmodels/aTrd.jpg)";
+    item.dom.style.backgroundImage = `url(${trdImg})`;
 
     item.setTextContent(strings.getKey('menubar/add/atrapezoid'));
     item.dom.setAttribute('draggable', true);
@@ -1234,7 +1257,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(/images/basicmodels/aTrap.jpg)";
+    item.dom.style.backgroundImage = `url(${trapImg})`;
 
     item.setTextContent(strings.getKey('menubar/add/atrapezoid2'));
     item.dom.setAttribute('draggable', true);
@@ -1377,7 +1400,7 @@ function ModelCategory(editor) {
 
     item = new UIDiv();
     item.setClass('Category-item');
-    item.dom.style.backgroundImage = "url(/images/basicmodels/aTorus.jpg)";
+    item.dom.style.backgroundImage = `url(${torusImg})`;
 
     item.setTextContent(strings.getKey('menubar/add/atorus'));
     item.dom.setAttribute('draggable', true);
@@ -1583,7 +1606,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(/images/basicmodels/aEllipticalTube.jpg)";
+    item.dom.style.backgroundImage = `url(${ellipticaltubeImg})`;
 
     item.setTextContent(strings.getKey('menubar/add/aellipticalcylinder'));
     item.dom.setAttribute('draggable', true);
@@ -1657,7 +1680,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(/images/basicmodels/aEllipsoid.jpg)";
+    item.dom.style.backgroundImage = `url(${ellipsoidImg})`;
 
     item.setTextContent(strings.getKey('menubar/add/aellipsoid'));
     item.dom.setAttribute('draggable', true);
@@ -1844,7 +1867,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(/images/basicmodels/aEllipticalCone.jpg)";
+    item.dom.style.backgroundImage = `url(${ellipticalconeImg})`;
 
     item.setTextContent(strings.getKey('menubar/add/aellipticalcone'));
     item.dom.setAttribute('draggable', true);
@@ -1925,7 +1948,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(/images/basicmodels/aTwistedBox.jpg)";
+    item.dom.style.backgroundImage = `url(${twistedboxImg})`;
 
     item.setTextContent(strings.getKey('menubar/add/twistedbox'));
     item.dom.setAttribute('draggable', true);
@@ -2002,7 +2025,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(/images/basicmodels/aTwistedTrd.jpg)";
+    item.dom.style.backgroundImage = `url(${twistedtrdImg})`;
 
     item.setTextContent(strings.getKey('menubar/add/atwistedtrd'));
     item.dom.setAttribute('draggable', true);
@@ -2174,7 +2197,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(/images/basicmodels/aTwistedTrap.jpg)";
+    item.dom.style.backgroundImage = `url(${twistedtrapImg})`;
 
     item.setTextContent(strings.getKey('menubar/add/atwistedtrap'));
     item.dom.setAttribute('draggable', true);
@@ -2340,7 +2363,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(/images/basicmodels/aTwistedTubs.jpg)";
+    item.dom.style.backgroundImage = `url(${twistedtubImg})`;
 
     item.setTextContent(strings.getKey('menubar/add/atwistedtube'));
     item.dom.setAttribute('draggable', true);
@@ -2559,7 +2582,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(/images/basicmodels/aTet.jpg)";
+    item.dom.style.backgroundImage = `url(${tetImg})`;
 
     item.setTextContent(strings.getKey('menubar/add/tetrahedra'));
     item.dom.setAttribute('draggable', true);
@@ -2626,7 +2649,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(/images/basicmodels/aGenericTrap.jpg)";
+    item.dom.style.backgroundImage = `url(${generictrapImg})`;
 
     item.setTextContent(strings.getKey('menubar/add/generictrap'));
     item.dom.setAttribute('draggable', true);
@@ -2708,7 +2731,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(/images/basicmodels/aParaboloid.jpg)";
+    item.dom.style.backgroundImage = `url(${paraboloidImg})`;
 
     item.setTextContent(strings.getKey('menubar/add/aparaboloid'));
     item.dom.setAttribute('draggable', true);
@@ -2852,7 +2875,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(/images/basicmodels/aHyperboloid.jpg)";
+    item.dom.style.backgroundImage = `url(${hyperboloidImg})`;
 
     item.setTextContent(strings.getKey('menubar/add/ahyperboloid'));
     item.dom.setAttribute('draggable', true);
@@ -3039,7 +3062,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(/images/basicmodels/aBREPSolidPCone.jpg)";
+    item.dom.style.backgroundImage = `url(${solidconeImg})`;
 
     item.setTextContent(strings.getKey('menubar/add/polycone'));
     item.dom.setAttribute('draggable', true);
@@ -3126,7 +3149,7 @@ function ModelCategory(editor) {
     item = new UIDiv();
     item.setClass('Category-item');
 
-    item.dom.style.backgroundImage = "url(/images/basicmodels/aBREPSolidPolyhedra.jpg)";
+    item.dom.style.backgroundImage = `url(${solidpolyhedraImg})`;
 
     item.setTextContent(strings.getKey('menubar/add/polyhedra'));
     item.dom.setAttribute('draggable', true);
