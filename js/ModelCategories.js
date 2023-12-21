@@ -23,6 +23,63 @@ function ModelCategory(editor) {
     // Box model
 
     let item = new UIDiv();
+
+    item.setClass('Category-item');
+
+    item.dom.style.backgroundImage = "url(/images/basicmodels/radiationSource.jpg)";
+
+    item.setTextContent(strings.getKey('menubar/add/pointsource'));
+    item.dom.setAttribute('draggable', true);
+    item.dom.setAttribute('item-type', 'PointSource');
+    item.onClick(function () {
+
+        const pointSource = new THREE.PerspectiveCamera();
+		pointSource.name = 'PointSource';
+		pointSource.type = "PointSource";
+		pointSource.energysize = 1;
+		pointSource.energyunit = "eV";
+		pointSource.energykind = "B+";
+
+		editor.execute( new AddObjectCommand( editor, pointSource ) );
+
+    });
+
+    item.dom.addEventListener('dragend', function (event) {
+
+        var mouseX = event.clientX;
+        var mouseY = event.clientY;
+
+        // Convert the mouse position to scene coordinates
+        var rect = renderer.getBoundingClientRect();
+        var mouseSceneX = ((mouseX - rect.left) / rect.width) * 2 - 1;
+        var mouseSceneY = -((mouseY - rect.top) / rect.height) * 2 + 1;
+
+        // Update the cube's position based on the mouse position
+        var mouseScenePosition = new THREE.Vector3(mouseSceneX, mouseSceneY, 0);
+
+        mouseScenePosition.unproject(camera);
+        var direction = mouseScenePosition.sub(camera.position).normalize();
+        var distance = -camera.position.y / direction.y;
+        var position = camera.position.clone().add(direction.multiplyScalar(distance));
+
+        const pointSource = new THREE.PerspectiveCamera();
+		pointSource.name = 'PointSource';
+		pointSource.type = "PointSource";
+		pointSource.energysize = 1;
+		pointSource.energyunit = "eV";
+		pointSource.energykind = "B+";
+
+        pointSource.position.copy(position);
+		editor.execute( new AddObjectCommand( editor, pointSource ) );
+
+
+    });
+
+    options.add(item);
+    
+    // Box model
+
+    item = new UIDiv();
     item.setClass('Category-item');
 
     item.dom.style.backgroundImage = "url(/images/basicmodels/aBox.jpg)";
